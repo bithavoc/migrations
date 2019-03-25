@@ -131,7 +131,7 @@ func migrationFile() string {
 		if !ok {
 			break
 		}
-		if !strings.Contains(f.Function, "/go-pg/migrations") {
+		if !strings.Contains(f.Function, "/go-pg/migrations") && !strings.Contains(f.Function, "/bithavoc/migrations") {
 			return f.File
 		}
 	}
